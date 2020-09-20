@@ -17,14 +17,20 @@ enum Operation: String {
 }
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var resultPrint: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
     @IBAction func onClick(_ sender: UIButton) {
-        
+        let tag = sender.tag
+        if resultPrint.text == "0" {
+            resultPrint.text = "\(tag)"
+        } else {
+            resultPrint.text = "\(tag)"
+        }
     }
     
     @IBAction func devide(_ sender: UIButton) {
