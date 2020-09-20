@@ -26,11 +26,7 @@ class ViewController: UIViewController {
 
     @IBAction func onClick(_ sender: UIButton) {
         let tag = sender.tag
-        if resultPrint.text == "0" {
-            resultPrint.text = "\(tag)"
-        } else {
-            resultPrint.text = "\(tag)"
-        }
+        resultPrint.text = "\(tag)"
     }
     
     @IBAction func devide(_ sender: UIButton) {
