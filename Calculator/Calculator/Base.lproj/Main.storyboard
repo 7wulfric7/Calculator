@@ -116,14 +116,14 @@
                                                             <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jym-6Y-RmG"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="60" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DzC-Je-Ae4">
+                                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DzC-Je-Ae4">
                                                         <rect key="frame" x="96.5" y="0.0" width="97" height="89.5"/>
                                                         <state key="normal" image="divide"/>
                                                         <connections>
                                                             <action selector="devide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dGx-sF-5xu"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R56-7H-Sxz">
+                                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R56-7H-Sxz">
                                                         <rect key="frame" x="193.5" y="0.0" width="96.5" height="89.5"/>
                                                         <state key="normal" image="multiply"/>
                                                         <connections>
@@ -135,21 +135,21 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QHs-kE-tYt">
                                                 <rect key="frame" x="0.0" y="359" width="290" height="90"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="40" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2f-wa-5AP">
+                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2f-wa-5AP">
                                                         <rect key="frame" x="0.0" y="0.0" width="96.5" height="90"/>
                                                         <state key="normal" image="subtract"/>
                                                         <connections>
                                                             <action selector="substract:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aWB-L4-4O3"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wky-k4-Tbh">
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wky-k4-Tbh">
                                                         <rect key="frame" x="96.5" y="0.0" width="97" height="90"/>
                                                         <state key="normal" image="add"/>
                                                         <connections>
                                                             <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4NO-O0-2hW"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="70" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4y-sf-YZk">
+                                                    <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4y-sf-YZk">
                                                         <rect key="frame" x="193.5" y="0.0" width="96.5" height="90"/>
                                                         <state key="normal" image="equal"/>
                                                         <connections>
@@ -175,14 +175,14 @@
                                     <constraint firstAttribute="trailing" secondItem="BYX-Z7-MQK" secondAttribute="trailing" constant="10" id="vg1-dQ-F0n"/>
                                 </constraints>
                             </view>
-                            <view tag="20" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zj-3G-IXT">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zj-3G-IXT">
                                 <rect key="frame" x="20" y="104" width="374" height="89.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="XRG-Na-I3I">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="89.5"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHD-zw-aJz">
-                                        <rect key="frame" x="322" y="30" width="22" height="29.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHD-zw-aJz">
+                                        <rect key="frame" x="344" y="30" width="0.0" height="29.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -221,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-552" y="-170"/>
+            <point key="canvasLocation" x="-787" y="-393"/>
         </scene>
     </scenes>
     <resources>
