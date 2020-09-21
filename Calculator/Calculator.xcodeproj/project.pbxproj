@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22EFABAB25190FD9007A9515 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22F0DD5725151ACB0065B1E7 /* Minecraft.ttf */; };
 		22F0DD3B2515157A0065B1E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F0DD3A2515157A0065B1E7 /* AppDelegate.swift */; };
 		22F0DD3D2515157A0065B1E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F0DD3C2515157A0065B1E7 /* SceneDelegate.swift */; };
 		22F0DD3F2515157A0065B1E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F0DD3E2515157A0065B1E7 /* ViewController.swift */; };
@@ -137,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22EFABAB25190FD9007A9515 /* Minecraft.ttf in Resources */,
 				22F0DD472515157B0065B1E7 /* LaunchScreen.storyboard in Resources */,
 				22F0DD442515157B0065B1E7 /* Assets.xcassets in Resources */,
 				22F0DD422515157A0065B1E7 /* Main.storyboard in Resources */,
