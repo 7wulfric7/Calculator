@@ -136,24 +136,31 @@
                                                 <rect key="frame" x="0.0" y="359" width="290" height="90"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2f-wa-5AP">
-                                                        <rect key="frame" x="0.0" y="0.0" width="96.5" height="90"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="90"/>
                                                         <state key="normal" image="subtract"/>
                                                         <connections>
                                                             <action selector="substract:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aWB-L4-4O3"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wky-k4-Tbh">
-                                                        <rect key="frame" x="96.5" y="0.0" width="97" height="90"/>
+                                                        <rect key="frame" x="72.5" y="0.0" width="72.5" height="90"/>
                                                         <state key="normal" image="add"/>
                                                         <connections>
                                                             <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4NO-O0-2hW"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4y-sf-YZk">
-                                                        <rect key="frame" x="193.5" y="0.0" width="96.5" height="90"/>
+                                                        <rect key="frame" x="145" y="0.0" width="72.5" height="90"/>
                                                         <state key="normal" image="equal"/>
                                                         <connections>
                                                             <action selector="equal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSE-3b-asW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDG-hm-tuK">
+                                                        <rect key="frame" x="217.5" y="0.0" width="72.5" height="90"/>
+                                                        <state key="normal" image="AC BUTTON"/>
+                                                        <connections>
+                                                            <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TmE-i5-IA0"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -236,6 +243,7 @@
         <image name="7" width="55.5" height="57"/>
         <image name="8" width="55.5" height="57"/>
         <image name="9" width="55.5" height="57"/>
+        <image name="AC BUTTON" width="55.5" height="55.5"/>
         <image name="add" width="55.5" height="57"/>
         <image name="backpanel" width="310" height="469"/>
         <image name="counter" width="258" height="66.5"/>

@@ -15,6 +15,7 @@ enum Operation: String {
     case devide = "/"
     case equal = "="
     case empty = " "
+    case clear = ""
 }
 
 class ViewController: UIViewController {
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
     var rightNumberString = ""
     var currentOperation: Operation = .empty
     var result = ""
+    
 //    var previousNumber = 0.0
 //    var screenNumber = 0.0
 //    var result = 0.0
@@ -35,7 +37,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     func preparePlayer() {
-//        let path = Bundle.main.path(forResource: "btn.wav", ofType:nil)!
         guard let url = Bundle.main.url(forResource: "btn", withExtension: "wav") else {
             return
         }
@@ -53,59 +54,61 @@ class ViewController: UIViewController {
     @IBAction func onClick(_ sender: UIButton) {
         player?.play()
         let number = sender.tag
-        runningNumber = "\(number)"
-        resultPrint.text = "\(number)"
+        var tempRunningNumber = ""
+        if resultPrint.text != "" {
+            if let n = resultPrint.text {
+                tempRunningNumber = "\(n)\(number)"
+            }
+        } else {
+                tempRunningNumber = "\(number)"
+
+            }
+        
+        runningNumber = tempRunningNumber
+        resultPrint.text = runningNumber
+    }
 //        resultPrint.text = resultPrint.text! + String(sender.tag)
        
 //        previousNumber = Double(resultPrint.text!)!
 //        screenNumber = Double(resultPrint.text!)!
-    }
     
     @IBAction func devide(_ sender: UIButton) {
         calculateOperation(operation: .devide)
-//        if sender.tag == 13 {
-//        result = previousNumber / screenNumber
-//        result = Double(sender.tag / sender.tag)
         }
     
     
     @IBAction func multiply(_ sender: UIButton) {
         calculateOperation(operation: .multiply)
-//        if sender.tag == 12 {
-//        result = previousNumber * screenNumber
-//        result = Double(sender.tag / sender.tag)
         }
     
     
     @IBAction func substract(_ sender: UIButton) {
         calculateOperation(operation: .subtract)
-//        if sender.tag == 11 {
-//        result = previousNumber - screenNumber
-//        result = Double(sender.tag / sender.tag)
         }
     
     
     @IBAction func add(_ sender: UIButton) {
         calculateOperation(operation: .add)
-//        if sender.tag == 10 {
-//            resultPrint.text = "+"
-//        result = Double(sender.tag / sender.tag)
         }
     
     
     @IBAction func equal(_ sender: UIButton) {
         calculateOperation(operation: .equal)
-//        if sender.tag == 14 {
-//        resultPrint.text = "\(result)"
         }
     
+    @IBAction func clear(_ sender: UIButton) {
+        calculateOperation(operation: .clear)
+        resultPrint.text = ""
+        runningNumber = ""
+        currentOperation = .empty
+    }
     
     func calculateOperation(operation: Operation) {
         player?.play()
         if currentOperation == .empty {
             leftValueString = runningNumber
-                      runningNumber = ""
-                        currentOperation = operation
+            runningNumber = ""
+            currentOperation = operation
         } else {
             if runningNumber != "" {
                 // Do the math
@@ -113,7 +116,7 @@ class ViewController: UIViewController {
                 runningNumber = ""
                 
                 if currentOperation == .add {
-                result = "\(Double(leftValueString)! + Double(rightNumberString)!)"
+                    result = "\(Double(leftValueString)! + Double(rightNumberString)!)"
                 } else if currentOperation == .multiply {
                     result = "\(Double(leftValueString)! * Double(rightNumberString)!)"
                 } else if currentOperation == .subtract {
@@ -125,21 +128,6 @@ class ViewController: UIViewController {
                 resultPrint.text = result
             }
                 currentOperation = operation
-//        switch currentOperation {
-//        case .add:
-//            break
-//        case .multiply:
-//            resultPrint.text = "*"
-//        case .subtract:
-//            resultPrint.text = "-"
-//        case .devide:
-//            resultPrint.text = "/"
-//        case .equal:
-//            resultPrint.text = "="
-//        case .empty:
-////            Ova se povikuva sekogas koga prv pat se klika na operacija
-//
-//            break
         }
     }
 }
