@@ -54,55 +54,40 @@ class ViewController: UIViewController {
     @IBAction func onClick(_ sender: UIButton) {
         player?.play()
         let number = sender.tag
-        var tempRunningNumber = ""
-        if resultPrint.text != "" {
-            if let n = resultPrint.text {
-                tempRunningNumber = "\(n)\(number)"
-            }
-        } else {
-                tempRunningNumber = "\(number)"
-
-            }
         
-        runningNumber = tempRunningNumber
+        if resultPrint.text != "" {
+            runningNumber = runningNumber + "\(number)"
+            } else {
+                runningNumber = "\(number)"
+        }
         resultPrint.text = runningNumber
     }
 //        resultPrint.text = resultPrint.text! + String(sender.tag)
-       
+       // napisanovo nema vrska, jas sum probuval nesto prethodno.
 //        previousNumber = Double(resultPrint.text!)!
 //        screenNumber = Double(resultPrint.text!)!
     
     @IBAction func devide(_ sender: UIButton) {
         calculateOperation(operation: .devide)
         }
-    
-    
     @IBAction func multiply(_ sender: UIButton) {
         calculateOperation(operation: .multiply)
         }
-    
-    
     @IBAction func substract(_ sender: UIButton) {
         calculateOperation(operation: .subtract)
         }
-    
-    
     @IBAction func add(_ sender: UIButton) {
         calculateOperation(operation: .add)
         }
-    
-    
     @IBAction func equal(_ sender: UIButton) {
         calculateOperation(operation: .equal)
         }
-    
     @IBAction func clear(_ sender: UIButton) {
         calculateOperation(operation: .clear)
         resultPrint.text = ""
         runningNumber = ""
         currentOperation = .empty
     }
-    
     func calculateOperation(operation: Operation) {
         player?.play()
         if currentOperation == .empty {
@@ -114,7 +99,6 @@ class ViewController: UIViewController {
                 // Do the math
                 rightNumberString = runningNumber
                 runningNumber = ""
-                
                 if currentOperation == .add {
                     result = "\(Double(leftValueString)! + Double(rightNumberString)!)"
                 } else if currentOperation == .multiply {
